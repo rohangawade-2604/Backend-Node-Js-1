@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "is-palindrome": "^0.3.0"
+  }
+}
