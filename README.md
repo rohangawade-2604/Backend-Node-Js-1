@@ -4,4 +4,6 @@
 
 2. first day with Knowing about the Node.js and Watching the MD files 
 
+3. Second day started with Implementations of the code with using the NPM part of nodes.js 
+
 
