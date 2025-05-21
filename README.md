@@ -9,4 +9,4 @@
 4. After knowing about the Node.js Npm , started implementation with the palindrome , armstrong , factorial , arthemetic operations , reverse a string part of the code
 
 
-4. After knowing about the Node.js Npm , started implementation with the palindrome , armstrong , factorial , arthemetic operations , reverse a string part of the code
+4
