@@ -15,3 +15,4 @@ const div = (a , b) => {
 }
 
 module.exports = {sub , sum , mul , div};
+
