@@ -4,24 +4,24 @@ const fs = require("fs");
 const port = 8000;
 
 const server = http.createServer((req, res) => {
-    if(request.url === "/addData" && request.method === "POST"){
+    if(req.url === "/addData" && req.method === "POST"){
         let str = "";
-        request.on("data", (chunk) => {
+        req.on("data", (chunk) => {
             str += chunk; 
-        });
+        }); 
         
-        request.on("end", () => {
+        req.on("end", () => {
             console.log(str);
+            res.end("I received the data");
         });
-        Response.end("I received the data");.
         
     }
 
-    else if(request.url === "/movies"){
-        const moviesStream = fs.createReadStream("../Day-1/leacture.txt", {
+    else if(req.url === "/movies"){
+        const moviesStream = fs.createReadStream("../Day-4/read.txt", {
             encoding: "utf-8",
         });
-        moviesStream.pipe(response);
+        moviesStream.pipe(res);
     }
 });
 
