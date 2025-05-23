@@ -6,7 +6,8 @@
     "start": "nodemon index.js",
     "start1": "nodemon index1.js",
     "start2": "nodemon index2.js",
-    "start3": "nodemon index3.js"
+    "start3": "nodemon index3.js",
+    "start4": "nodemon practiceInd.js"
   },
   "keywords": [],
   "author": "",
