@@ -5,7 +5,7 @@ const port = 8000;
 
 const server = http.createServer((req , res) => {
     if(req.url === "/data" && req.method === "POST") {
-        let str = "rfdafda";
+        let str = "";
         req.on("data", (chunck) => {
             str += chunck;
         });
