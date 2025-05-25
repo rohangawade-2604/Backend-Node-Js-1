@@ -1,4 +1,4 @@
-# Hello world
+ji# Hello world
 
 1. Day Started with Node JS and it done with day 5
 
@@ -10,7 +10,10 @@
 
 5. Date 23-05-2025 , just practicing with the createServer part of the data and showing the data into the database to practice the situation of the part
 
-6. Date 35-05-2025 , Not done with a single work , Just making Streak mode on for this part
+6. Date 25-05-2025 , Not done with a single work , Just making Streak mode on for this part                               
+7. just making the node point on for and just growing the streaks part for the day itself
+  
+9. Just added wrong number in the streaks
 
 
 
