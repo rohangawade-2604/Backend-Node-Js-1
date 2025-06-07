@@ -13,6 +13,7 @@ const server = http.createServer((req, res) => {
         req.on("end", () => {
             console.log(str);
             res.end("I received the data");
+            console.log("Data adding")
         });
         
     }
