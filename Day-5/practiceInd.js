@@ -21,6 +21,7 @@ const server = http.createServer((req , res) => {
         });
 
         picturesStream.pipe(res);
+        console.log("data collect from the pictures")
     }
 
 });
