@@ -8,13 +8,13 @@ app.get('/', (req, res) => {
     res.send('accpeted data');
 });
 
-app.post('/addDetails' , (res, req) => {
+app.post('/addDetails' , (req, res) => {
     console.log(req);
     console.log(req.body);
     res.send('Accepted data from rohan gawade')
 
 });
 
-app.listen(7000, () => {
-    console.log('port listen on 7000');
+app.listen(8000, () => {
+    console.log('port listen on 8000');
 })

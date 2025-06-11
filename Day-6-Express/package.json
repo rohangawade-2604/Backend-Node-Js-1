@@ -8,7 +8,8 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "start1": "nodemon ExpressdD1.js"
   },
   "keywords": [],
   "author": "",
