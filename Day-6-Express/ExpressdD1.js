@@ -31,6 +31,6 @@ app.post('/update', (req, res) => {
 })
 
 app.listen(port , () => {
-    console.log('Server is running on the port '+ port);
+    console.log('Server is running on the port '+ port);                // this is used to the run the server part which is use to run on the specific port of the as on localhost port 9000
 });
 
