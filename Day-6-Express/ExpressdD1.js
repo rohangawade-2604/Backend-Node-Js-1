@@ -26,6 +26,11 @@ app.post('/student', (req, res) => {
     res.send('student data saved successfully in the database');
 })
 
+app.post('/update', (req, res) => {
+    fs.appendFileSync('stdnt.json' , JSON.stringify(req.body) + ('/n') , 'utf-8')
+    res.send('Student data is been updated successfully');
+})
+
 app.listen(port , () => {
     console.log('Server is running on the port '+ port);
 });
