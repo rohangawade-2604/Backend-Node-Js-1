@@ -9,7 +9,7 @@
   "devDependencies": {},
   "scripts": {
     "start": "nodemon index.js",
-    "start1": "nodemon ExpressdD1.js"
+    "start1": "nodemon CRUD.js"
   },
   "keywords": [],
   "author": "",
