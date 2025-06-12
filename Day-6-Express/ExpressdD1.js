@@ -16,7 +16,7 @@ app.get('/showData', (req,res) => {
 });
 
 app.delete('/remove' , (req , res) => {
-     fs.rm('stdnt.json' )
+     fs.rm('stdnt.json' )                               //this is used to delete the file from the database using delete method from the thunderclient
     res.send("Data is been deleted");
 })
 
