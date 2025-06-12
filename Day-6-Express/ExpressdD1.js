@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.text());
 
 app.get('/showData', (req,res) => {
-    const data = fs.readFileSync('stdnt.json', 'utf-8')
+    const data = fs.readFileSync('stdnt.json', 'utf-8')         //this is used to read the file form the database which we can get the data and read the data inside in it
     res.send(data);
 });
 
