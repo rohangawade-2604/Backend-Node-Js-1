@@ -26,7 +26,7 @@ app.post('/student', (req, res) => {
 })
 
 app.post('/update', (req, res) => {
-    fs.appendFileSync('stdnt.json' , JSON.stringify(req.body,) + ('\n') , 'utf-8')
+    fs.appendFileSync('stdnt.json' , JSON.stringify(req.body,) + ('\n') , 'utf-8')          // this is used to update the text either the json data and add some data in the json or text file using the post methond so we can post the updated data inside the thunder client in it
     res.send('Student data is been updated successfully');
 })
 
