@@ -22,12 +22,11 @@ app.delete('/remove' , (req , res) => {
 
 app.post('/student', (req, res) => {
     fs.writeFileSync('stdnt.json', JSON.stringify(req.body) , 'utf-8');         // this is used to write and create the file in the database in thunderclient
-
     res.send('student data saved successfully in the database');
 })
 
 app.post('/update', (req, res) => {
-    fs.appendFileSync('stdnt.json' , JSON.stringify(req.body) + ('/n') , 'utf-8')
+    fs.appendFileSync('stdnt.json' , JSON.stringify(req.body,) + ('\n') , 'utf-8')
     res.send('Student data is been updated successfully');
 })
 
