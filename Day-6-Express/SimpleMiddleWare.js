@@ -14,14 +14,24 @@ app.use((req ,res, next) => {
 // Middleware to log the request method and URL
 
 app.use((req, res,next) => {
-    let auth = true;                                                     // Simulating an authentication check                                    
-    if (!auth) {                                                            
-        res.send('you are not authorized to view this page ')
+
+    if(3+2 === 5){
+        res.send('Byee ')
     }
     else{
         next();
-        console.log('Welcome rohan Gawade ')
     }
+
+
+
+    // let auth = true;                                                     // Simulating an authentication check                                    
+    // if (!auth) {                                                            
+    //     res.send('you are not authorized to view this page ')
+    // }
+    // else{
+    //     next();
+    //     
+    // }
 })
 
 
