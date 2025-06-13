@@ -5,17 +5,25 @@ const port = 7000;
 
 const app = express();
 
-// middleware to log the time taken for each request
-const watchmam = (req , res , next) => {
-    if(req.url === '/about'){
-        next();
-    }
-    else{
-        res.send('plz come late to this page');
-    }
-}
+// middleware example 1
 
-app.use(watchmam);
+app.use((req, res, next) => {
+    const startTime = new Date().getTime();
+    next();
+    const endTime = new Date().getTime();
+    console.log(endTime - startTime);
+});
+// middleware to log the time taken for each request --- (example 2) ----
+// const watchmam = (req , res , next) => {
+//     if(req.url === '/about'){
+//         next();
+//     }
+//     else{
+//         res.send('plz come late to this page');
+//     }
+// }
+
+// app.use(watchmam);
 
 
 app.get('/', (req, res) => {

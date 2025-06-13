@@ -10,7 +10,8 @@
   "scripts": {
     "start": "nodemon index.js",
     "start1": "nodemon CRUD.js",
-    "start2": "nodemon SimpleMiddleWare.js"
+    "start2": "nodemon SimpleMiddleWare.js",
+    "start3": "nodemon TimeTakenWare.js"
   },
   "keywords": [],
   "author": "",
