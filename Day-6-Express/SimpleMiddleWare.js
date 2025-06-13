@@ -15,7 +15,7 @@ app.use((req ,res, next) => {
 
 app.use((req, res,next) => {
     let auth = true;                                                     // Simulating an authentication check                                    
-    if (auth) {                                                            
+    if (!auth) {                                                            
         res.send('you are not authorized to view this page ')
     }
     else{
