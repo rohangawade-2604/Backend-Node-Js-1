@@ -9,7 +9,8 @@
   "devDependencies": {},
   "scripts": {
     "start": "nodemon index.js",
-    "start1": "nodemon CRUD.js"
+    "start1": "nodemon CRUD.js",
+    "start2": "nodemon SimpleMiddleWare.js"
   },
   "keywords": [],
   "author": "",
