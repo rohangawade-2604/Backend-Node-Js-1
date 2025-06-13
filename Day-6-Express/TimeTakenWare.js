@@ -13,6 +13,8 @@ app.use((req, res, next) => {
     const endTime = new Date().getTime();
     console.log(endTime - startTime);
 });
+
+
 // middleware to log the time taken for each request --- (example 2) ----
 // const watchmam = (req , res , next) => {
 //     if(req.url === '/about'){
