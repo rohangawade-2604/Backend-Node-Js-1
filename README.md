@@ -33,7 +33,10 @@ ________________________________________________________________________________
 
 - first steps to install the express package cmd `npm i express` and nodemon package cmd `npm i nodemon`
 
-- what is next() in express.js
+## What is next() in express.js
+- In Express.js, next() is a function that is passed as the third argument to middleware functions. It is used to pass control to the next middleware function in the stack. 
+
+- next() essentially says "I'm done with my part, let the next middleware function handle the request."
 
 
 
