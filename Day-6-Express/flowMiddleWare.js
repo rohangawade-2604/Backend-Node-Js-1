@@ -22,19 +22,19 @@ app.get('/', (req , res) => {
 });
 
 
-app.get('/about' , (res , req) => {
+app.get('/about' , (req , res) => {
     console.log('hello i am about page');
     res.send('about')
 })
 
-app.get('/contact' , (res , req) => {
-    console.log('hello i am about page');
-    res.send('about')
+app.get('/contact' , (req , res) => {
+    console.log('hello i am contact page');
+    res.send('contact')
 })
 
-app.get('/blogs' , (res , req) => {
-    console.log('hello i am about page');
-    res.send('about')
+app.get('/blogs' , (req , res) => {
+    console.log('hello i am blogs page');
+    res.send('blogs')
 })
 
 app.listen(port , () => {
