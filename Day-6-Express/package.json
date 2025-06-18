@@ -13,7 +13,8 @@
     "start2": "nodemon SimpleMiddleWare.js",
     "start3": "nodemon TimeTakenWare.js",
     "start4": "nodemon flowMiddleware.js",
-    "start5": "nodemon CustomMiddleWare.js"
+    "start5": "nodemon CustomMiddleWare.js",
+    "start6": "nodemon MiddleWare.js"
   },
   "keywords": [],
   "author": "",
