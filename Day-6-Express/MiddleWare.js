@@ -3,7 +3,7 @@ const fs = require('fs')
 const cors =require('cors')
 const port = 9000;
 
-const {StudnetRouter} = require("./Routes/Student.Routes");
+const {studentRouter} = require("./Routes/student.Routes");
 const {lectureRoute} = require("/Routes/Lecture.Routes");
 
 const app = express();
@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(express.text());
 
-app.use("/student", StudnetRouter);
+app.use("/student", studentRouter);
 
 
 app.use(
