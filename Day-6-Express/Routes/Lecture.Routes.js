@@ -15,4 +15,4 @@ lectureRoute.post('/addLecture', (req, res) => {
     res.send('ok the lecture data wasa added')
 });
 
-module.exports = lectureRoute ;....
+module.exports = lectureRoute ;
