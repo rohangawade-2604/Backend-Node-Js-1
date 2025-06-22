@@ -18,7 +18,3 @@ lectureRoute.post('/addLecture', (req, res) => {
 module.exports = lectureRoute ;
 
 
-lectureRoute.get('/web13/:id', (req, res) => {
-    const id = req.params.id;
-    res.send(`web 13 student with id ${id}`)
-});
