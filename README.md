@@ -115,3 +115,5 @@ ____
 
 here are some command as follow below in this is
 
+1. show dbs -> means how many db are present in mongoDB.
+
