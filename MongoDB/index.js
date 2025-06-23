@@ -19,10 +19,10 @@ app.get('/weather', (req,res) => {
     }
     const city = req.query.city;
     const weather = data[city];
-    res.send('today weather is ${city} os ${weather}');
+    res.send(`today weather is ${city} is ${weather}`);
 });
 
-app.get('/students/studentID', (req, res) => {
+app.get('/students/:studentID', (req, res) => {
     const ID = req.params.studentID;
     res.send(`Here is the data of student with ID is ${ID}`)
 })
