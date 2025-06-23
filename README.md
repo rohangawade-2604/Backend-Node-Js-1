@@ -44,5 +44,30 @@ ____
 ### What are the MiddleWares in Express.js ?
 - In Express.js, Middleware functions are functions that have access to the request object (req), the response object (res), and the next function in the application's request-response cycle. These functions are executed sequentially and can perform various tasks before the final route handler is invoked. 
 
+____
+
+# MongoDB learning
+
+## What is MongoDB ?
+- NO-SQL/Non Relational Database.
+- High Performance.
+- Highly Scalable.
+- map/reducer Aggragations.
+- Auto Sharding.
 
 
+## Why
+
+- Flexible data requirement.
+- Need high availability.
+- Need distribution data access.
+- Read speed matter more than write speed.
+
+
+# When to not 
+
+- Write is important that read.
+- Data is fully relational.
+- Everything is connection to every other thing.
+- Transitional support is high priority.
+- eg:- banking, payments, IOT etc.
