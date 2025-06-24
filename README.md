@@ -119,7 +119,7 @@ here are some command as follow below in this is
 
 1. **_use "db_name"_** -> _**`to switch the dataBase init which we want to switch the database.`**_
 
-1. **_show Collections_** -> _**`to show the collectioons are present in db.`**_
+1. **_show collections_** -> _**`to show the collectioons are present in db.`**_
 
 1. **_db."collection_name".find()_** -> _**`to finde all the data are present in the collection. `**_
 
