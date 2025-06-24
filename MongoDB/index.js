@@ -4,7 +4,7 @@ const port = 9000;
 
 const app = express();
 
-const dataRouter = require('./Routes/dataRoutes');
+const dataRouter = require('./Routes/dataRoutes');  // Routing part 
 
 app.use(express.json());
 
@@ -13,6 +13,11 @@ app.get('/data', dataRouter)
 app.get('/', (req, res) => {
     res.send('hello world')
 });
+
+app.get('/about', (req, res) => {
+    const {course} = req.query;
+    res.send('This is about page ${course}') 
+})
 
 app.get('/weather', (req,res) => {
     const data = {

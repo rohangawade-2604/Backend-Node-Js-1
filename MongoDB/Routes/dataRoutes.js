@@ -1,6 +1,6 @@
-const epxress = require('express');
+const express = require('express');
 
-const dataRouter = epxress.Router();
+const dataRouter = express.Router();
 
 dataRouter.get('/', (req, res) => {
     res.send('Data route is working')
