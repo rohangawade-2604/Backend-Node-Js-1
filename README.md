@@ -141,6 +141,21 @@ here are some command as follow below in this is
 
 1. **_db.collection-name.updateOne({})_** -> _**`It will update just one data into the document of the mongoDB database`**_
 
+        Example :
+
+         db.users.updateOne(
+            {name:"uzi tenzen"} , {$set:{age:30}
+        })
+
+        output: 
+         {
+         _id: ObjectId('685b9ad99112d509b4748a5f'),
+         name: 'uzi tenzen',
+         rank: 'hashira 2',
+         wifes: 'didnt not know',
+         age: 30
+         },
+
 1. **_db.collection-name.UpdateMany({})_** -> _**`It will delete just multiple same data found as  document from the mongoDB database using $set property`**_
 
         Example :-
