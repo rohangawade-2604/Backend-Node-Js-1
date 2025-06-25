@@ -134,8 +134,9 @@ here are some command as follow below in this is
 1. **_db.collection-name.deleteMany({})_** -> _**`It will delete just multiple same name document from the mongoDB database`**_
 
         Example:-
-        
+
         db.users.deleteMany({ country: "India" })
 
         Note:- if India is written in multiple documents so we can use the deleteMany command for deleting the data from the mongoDB database
 
+1. **_db.collection-name.updateOne({})_** -> _**`It will update just one data into the document of the mongoDB database`**_
