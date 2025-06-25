@@ -15,4 +15,4 @@ dataRouter.post('/addData', (req,res) => {
     res.send('all data here...')
 });
 
-module.exports = dataRouter;
+module.exports = {dataRouter};

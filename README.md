@@ -129,3 +129,5 @@ here are some command as follow below in this is
 
 1. **_use "db-name"_** -> _**`it will create the dataBase from mongoDB.`**_
 
+1. **_db.collection-name.deleteOne({})_** -> 
+
