@@ -131,7 +131,7 @@ here are some command as follow below in this is
 
 1. **_db.collection-name.deleteOne({})_** -> _**`It will delete just one document from the mongoDB database`**_
 
-1. **_db.collection-name.deleteMany({})_** -> _**`It will delete just multiple same name document from the mongoDB database`**_
+1. **_db.collection-name.deleteMany({})_** -> _**`It will delete just multiple same data found as  document from the mongoDB database`**_
 
         Example:-
 
@@ -140,3 +140,16 @@ here are some command as follow below in this is
         Note:- if India is written in multiple documents so we can use the deleteMany command for deleting the data from the mongoDB database
 
 1. **_db.collection-name.updateOne({})_** -> _**`It will update just one data into the document of the mongoDB database`**_
+
+1. **_db.collection-name.UpdateMany({})_** -> _**`It will delete just multiple same data found as  document from the mongoDB database`**_
+
+        Example :-
+
+         db.users.updateMany(
+            {wifes:'dont'}, {$set: {active:true}
+        })
+
+        Note: {wifes:'dont'} = From this , it will target the data of the document
+
+        {$set: {active:true}} = This is the updated data in every document which will selected in wifes using the '$set' property
+
