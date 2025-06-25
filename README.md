@@ -129,5 +129,8 @@ here are some command as follow below in this is
 
 1. **_use "db-name"_** -> _**`it will create the dataBase from mongoDB.`**_
 
-1. **_db.collection-name.deleteOne({})_** -> _**`It will delete just one document from the mongoDB database`**_bbn
+1. **_db.collection-name.deleteOne({})_** -> _**`It will delete just one document from the mongoDB database`**_
+
+1. **_db.collection-name.deleteOne({})_** -> _**`It will delete just one document from the mongoDB database`**_
+
 
