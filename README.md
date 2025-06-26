@@ -156,7 +156,7 @@ here are some command as follow below in this is
          age: 30
          },
 
-1. **_db.collection-name.UpdateMany({})_** -> _**`It will delete just multiple same data found as  document from the mongoDB database using $set property`**_
+1. **_db.collection-name.UpdateMany({})_** -> _**`It will delete just multiple same data found as  document from the mongoDB database using $set propertyhfdlahkdlhajkf`**_
 
         Example :-
 
