@@ -170,4 +170,3 @@ here are some command as follow below in this is
 
 
 
-mongodb+srv://rohangawade2604:rohangawade@cluster0.ryicjpe.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
