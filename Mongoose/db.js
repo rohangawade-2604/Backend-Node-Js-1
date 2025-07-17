@@ -33,3 +33,15 @@ const main = async () => {
 };
 
 main();
+
+const studentSchema = mongoose.Schema(
+    {
+        name : {type: String, required: true},
+        age: {type: Number, required: true},
+        city: {type: String, required: true}
+    },
+
+    {versionKey: false}
+)
+
+const StudentModel = mongoose.model('users', studentSchema);
