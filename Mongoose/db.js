@@ -6,7 +6,7 @@ const main = async () => {
 
         );
         console.log('Connected to DataBase');
-    }
+    
 
 
     // this is the one way to insert the data in the database
@@ -24,5 +24,12 @@ const main = async () => {
     console.log(StudentData);
 
     await Connect.disconnect();
-    console.log('')
-}
+    console.log('Connection closed');
+    } 
+
+    catch (error) {
+        console.log("Error connecting to db");
+    }
+};
+
+main();
