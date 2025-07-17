@@ -16,4 +16,10 @@ const main = async () => {
         city: "kandivali"
     });
     await Student.save();
+
+
+    //if you want to just get the data which is store in db do this
+
+    const Students = await StudentModel.find({});
+    console.log(Students);
 }
