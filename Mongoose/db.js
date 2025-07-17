@@ -7,4 +7,13 @@ const main = async () => {
         );
         console.log('Connected to DataBase');
     }
+
+
+    // this is the one way to insert the data in the database
+    const Student = new StudentModel({
+        name : 'John Doe',
+        age : 20,
+        city: "kandivali"
+    });
+    await Student.save();
 }
