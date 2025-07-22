@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const main = async () => {
     try {
         const Connect = await mongoose.connect(
-
+        "mongodb://127.0.0.1:27017/studentDB"
         );
         console.log('Connected to DataBase');
     
@@ -20,7 +20,7 @@ const main = async () => {
 
     //if you want to just get the data which is store in db do this
 
-    const StudentData = await StudentModel.find({});
+    const StudentData = await StudentModel.find();
     console.log(StudentData);
 
     await Connect.disconnect();
