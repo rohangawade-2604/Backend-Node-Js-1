@@ -103,3 +103,9 @@ DEPENDEND COLLECTIONS AND INDEPENDENT COLLECTIONS
 
         Note:- best way to figure-out the concept was just 
         --> always put INDEPENDENT's ID to DEPENDENT
+        --> always put parent ID into Child
+
+        Exercise 
+
+        user:- INDEPENDENT -- parent
+        notes:
