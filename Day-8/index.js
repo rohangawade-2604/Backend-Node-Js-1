@@ -8,6 +8,7 @@ app.use(express.json());
 const { connections, UserModules } = require('./dbs');
 
 app.get("/", async (req, res) => {
+    const data = req.body;
     try {
         const addManyData = await UserModules.updateMany({}, { $set: data});
         res.send(addManyData);
@@ -49,7 +50,7 @@ app.post("/createuser", async(req, res) => {
 });
 
 app.put("/userupdate/:userId", async (req, res) => {
-    const userId = req.params.userid;
+    const userId = req.params.userId;
     console.log(userId)
     const payload = req.body;
     try {

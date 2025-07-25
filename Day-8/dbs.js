@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 require("dotenv").config();
 
-const connections = mongoose.connect(process.env.MongoDB.Url);
+const connections = mongoose.connect(process.env.MongoDBurl);
 
 const userSchema = new mongoose.Schema({
     name: String,
