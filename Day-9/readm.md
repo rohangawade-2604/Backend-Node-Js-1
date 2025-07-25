@@ -98,3 +98,8 @@ DEPENDEND COLLECTIONS AND INDEPENDENT COLLECTIONS
 
          post --> DEPENDENT || comment --> INDEPENDENT
 
+
+1. Many to Many
+
+        Note:- best way to figure-out the concept was just 
+        --> always put INDEPENDENT's ID to DEPENDENT
