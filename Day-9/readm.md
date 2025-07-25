@@ -108,4 +108,9 @@ DEPENDEND COLLECTIONS AND INDEPENDENT COLLECTIONS
         Exercise 
 
         user:- INDEPENDENT -- parent
-        notes:
+
+        notes:- DEPENDENT -- child
+
+**`Blog Applications`**
+
+// Read  --> UD 
