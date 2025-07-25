@@ -98,6 +98,3 @@ DEPENDEND COLLECTIONS AND INDEPENDENT COLLECTIONS
 
          post --> DEPENDENT || comment --> INDEPENDENT
 
-1.  1-1 Relationship
-
-         student --> DEPENDENT || user --> INDEPENDENT
