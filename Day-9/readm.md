@@ -78,6 +78,11 @@ ___
 
 **`Many to Many Relationship`**
 
-        * Tags Collections * : Python , node , express , git , MySQL
+    * Tags Collections * : Python , node , express , git , MySQL
 
-        * Question collections * : 
+    * Question collections * : 
+
+
+DEPENDEND COLLECTIONS AND INDEPENDENT COLLECTIONS
+
+**`child collections - parent collections`** 
