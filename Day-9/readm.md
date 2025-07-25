@@ -113,4 +113,4 @@ DEPENDEND COLLECTIONS AND INDEPENDENT COLLECTIONS
 
 **`Blog Applications`**
 
-// Read  --> UD 
+// Read  --> UD --> user_id of that user --> is missing the user_id in the notes/blogs
