@@ -96,7 +96,7 @@ DEPENDEND COLLECTIONS AND INDEPENDENT COLLECTIONS
 
 1.  1-Many Relationship
 
-         student --> DEPENDENT || user --> INDEPENDENT
+         post --> DEPENDENT || comment --> INDEPENDENT
 
 1.  1-1 Relationship
 
