@@ -82,7 +82,22 @@ ___
 
     * Question collections * : 
 
+___
+
 
 DEPENDEND COLLECTIONS AND INDEPENDENT COLLECTIONS
 
 **`child collections - parent collections`** 
+
+
+1.  1-1 Relationship
+
+         student --> DEPENDENT || user --> INDEPENDENT
+
+1.  1-Many Relationship
+
+         student --> DEPENDENT || user --> INDEPENDENT
+
+1.  1-1 Relationship
+
+         student --> DEPENDENT || user --> INDEPENDENT
