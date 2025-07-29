@@ -1,5 +1,5 @@
 import React from 'react'
-import { Login } from './login'
+
 
 export const SignUp = () => {
   return (
@@ -21,14 +21,15 @@ export const SignUp = () => {
              <input type="password" name='password' placeholder='Enter the password' />
         </div>
 
+          <div>
+           
+            <button type='submit'>Submit</button>
+        </div>
         
         
       </form>
 
-      <div>
-            <Login/>
-            <button type='submit'>Submit</button>
-        </div>
+
     </>
   )
 }

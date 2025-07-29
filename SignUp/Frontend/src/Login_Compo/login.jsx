@@ -21,7 +21,7 @@ export const Login = () => {
                 </div>
                 
                <div>
-                    <SignUp/>
+                 
                     <button type='submit'>Submit</button>
                </div>
                 
