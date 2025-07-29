@@ -10,9 +10,18 @@ export const login = () => {
 
         <div className="form">
             <form action="">
-                <input type="text" name='Username' placeholder='Enter the Username' />
-                <input type="password" name='password' placeholder='Enter the password' />
-                <button type='submit'>Submit</button>
+                <div>
+                    <input type="text" name='Username' placeholder='Enter the Username' />
+                </div>
+
+                <div>
+                     <input type="password" name='password' placeholder='Enter the password' />
+                </div>
+                
+               <div>
+                    <button type='submit'>Submit</button>
+               </div>
+                
             </form>
         </div>
       </div>
