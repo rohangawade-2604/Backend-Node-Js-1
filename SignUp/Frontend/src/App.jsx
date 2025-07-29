@@ -1,15 +1,18 @@
 
-import './App.css'
-import { Login } from './Login_Compo/login' 
-import { SignUp } from './Login_Compo/SignUp'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-function App() {
+import {Signup} from './Login_Compo/SignUp.jsx';
+
+const App = () => {
   return (
-    <>
-    {/* <SignUp/> */}
-      <Login/>
-    </>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="*" element={<Login />} /> {/* default to login */}
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;

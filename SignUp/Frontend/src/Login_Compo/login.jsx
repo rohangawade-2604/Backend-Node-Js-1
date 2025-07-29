@@ -1,35 +1,17 @@
-import React from 'react'
-import { SignUp } from './SignUp'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Login = () => {
-    return (
-        <>
-            <div className="login_page">
-                <div className="content">
-                    <h1 className='heading'>Login Users</h1>
-                </div>
-
-                <div className="form">
-                    <form action="">
-                        <div>
-                            <input type="text" name='Username' placeholder='Enter the Username' />
-                        </div>
-
-                        <div>
-                            <input type="password" name='password' placeholder='Enter the password' />
-                        </div>
-
-                         <h3>Dont have an account</h3> 
-                        <div>
-                           
-                            <button type='submit' onChange={SignUp}>Submit</button>
-                        </div>
-
-                    </form>
-                </div>
-            </div>
-        </>
-    )
-}
-
+  return (
+    <div>
+      <h2>Login Page</h2>
+      <form>
+        <input type="email" placeholder="Email" /><br />
+        <input type="password" placeholder="Password" /><br />
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <Link to="/signup">Sign Up</Link></p>
+    </div>
+  );
+};
 
