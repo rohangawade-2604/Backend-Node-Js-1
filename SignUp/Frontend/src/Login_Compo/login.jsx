@@ -19,7 +19,7 @@ export const Login = () => {
                             <input type="password" name='password' placeholder='Enter the password' />
                         </div>
 
-                    <a href="/signup?name=&age=&email=&password=">Dont have an account</a>
+                         <h3>Dont have an account</h3> 
                         <div>
                            
                             <button type='submit' onChange={SignUp}>Submit</button>
