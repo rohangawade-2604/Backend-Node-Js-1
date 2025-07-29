@@ -29,4 +29,20 @@ app.post('/signup', async (req, res) => {
     }
 })
 
-app.post
+app.post('/login', async (req, res) => {
+    const {email, password } = req.body;
+    try{
+        const checkUserDetails = await UserModule.find({email, password});
+        if(checkUserDetails.length > 0 ){
+            const token = jwt.sign({course: "nxm"}, "hust");
+            res.send({msg: "Login Successfully", token: token})
+        }
+        else{
+            res.send("login Denied")
+        }
+    }
+    catch(err){
+        console.log(err)
+        res.send("Something went wrong..! plz try again later...!")
+    }
+});
