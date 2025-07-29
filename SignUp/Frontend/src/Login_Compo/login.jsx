@@ -1,11 +1,13 @@
 import React from 'react'
+import "./Login.css"
+import {SignUp} from './SignUp'
 
-export const login = () => {
+export const Login = () => {
   return (
     <>
       <div className="login_page">
         <div className="content">
-            <h1>Login Users</h1>
+            <h1 className='heading'>Login Users</h1>
         </div>
 
         <div className="form">
@@ -19,6 +21,7 @@ export const login = () => {
                 </div>
                 
                <div>
+                    <SignUp/>
                     <button type='submit'>Submit</button>
                </div>
                 
