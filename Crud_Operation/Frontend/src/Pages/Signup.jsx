@@ -28,7 +28,7 @@ export const Signup = () => {
 
             
             <div className="ConfirmPassword">
-              <input type="text" name='confirmpassword' placeholder="ConfirmPassword" />
+              <input type="text" name='confirmpassword' placeholder="Confirm Password" />
             </div>
 
           </form>
