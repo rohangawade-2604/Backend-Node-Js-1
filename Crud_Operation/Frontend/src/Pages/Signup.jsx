@@ -31,6 +31,10 @@ export const Signup = () => {
               <input type="text" name='confirmpassword' placeholder="Confirm Password" />
             </div>
 
+            <div>
+              <button type='submit'>Signup</button>
+            </div>
+
           </form>
         </div>
       </div>
