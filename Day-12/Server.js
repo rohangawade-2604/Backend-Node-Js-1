@@ -45,5 +45,10 @@ app.post("/login", async(req, res) => {
     try{
         const checkUserDetails = await UserModule.find({email});
         console.log(checkUserDetails , "checkUserDetails")
+
+        if(checkUserDetails.length > 0) {
+            const hashPassWord = checkUserDetails[0].password;
+            console.log(hashPassWord , "hashPassWord")
+        }
     }
 })
