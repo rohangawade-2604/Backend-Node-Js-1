@@ -68,6 +68,7 @@ app.post("/login", async(req, res) => {
         }
     }
     catch(err) {
-        
+        console.log(err);
+        res.send("something went wrong! please try again leater...");
     }
-})
+});
