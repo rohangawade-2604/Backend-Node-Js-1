@@ -27,7 +27,7 @@ export const signupThunks = (FormData) => async (dispatch) => {
             }
          });
 
-         const result = await response.json()
+         const result = await response.text()
          console.log("API response" ,result);
          dispatch(signIns(result))
     }

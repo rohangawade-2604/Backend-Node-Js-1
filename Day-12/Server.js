@@ -39,3 +39,11 @@ app.post("/signup", async (req, res) => {
             res.send("something went wrong! please try again leater...");
         }
 })
+
+app.post("/login", async(req, res) => {
+    const {email , password} = req.body
+    try{
+        const checkUserDetails = await UserModule.find({email});
+        console.log(checkUserDetails , "checkUserDetails")
+    }
+})

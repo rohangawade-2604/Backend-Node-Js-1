@@ -1,10 +1,14 @@
 const express = require("express");
 require("dotenv").config();
+const jwt = require("jsonwebtoken");
+const cors = require("cors");
 
 const {Connections} = require("./config/db")
 const {UserModule} = require("./model/usermodel");
 
 const app = express();
+
+app.use(cors());
 
 app.use(express.json());
 
@@ -14,6 +18,8 @@ app.get("/", (req, res) => {
 
 app.post("/signup", async (req, res) => {
   const payload = req.body;
+  console.log(payload);
+  
   
   try {
     const users = new UserModule(payload);
