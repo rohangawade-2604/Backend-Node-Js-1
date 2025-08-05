@@ -48,7 +48,26 @@ app.post("/login", async(req, res) => {
 
         if(checkUserDetails.length > 0) {
             const hashPassWord = checkUserDetails[0].password;
-            console.log(hashPassWord , "hashPassWord")
+            console.log(hashPassWord , "hashPassWord");
+
+            bcrypt.compare(password, hashPassWord, function (err, result) {
+                console.log(result, "result");
+
+                if(result) {
+                    const token = jwt.sign({course:"nxm"} , "hust");
+                    res.send({msg: "login Successfully....", token: token})
+                }
+                else{
+                    res.send(`login Unsuccessfully password ${err}`)
+                } 
+            })
+            
         }
+        else{
+            res.send("login Unsuccessfully")
+        }
+    }
+    catch(err) {
+        
     }
 })
