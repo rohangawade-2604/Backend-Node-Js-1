@@ -34,5 +34,16 @@ Authentication :-
                     - math.random()
                     - bruteforcing
 
-            
-            
+
+
+            The solution - JWT - http://jwr.io/
+
+            1. Algorithm used
+            2. is some data - optional
+            3. secret key
+
+
+            1. Install jsonwebtoken package
+
+
+        4. H 
