@@ -108,4 +108,9 @@ app.listen(process.env.port, async () => {
         await Connections;
         console.log("Connection of DB get Successfully...!!!")
     }
+    catch(err) {
+        console.log("Connection of DB get failed...!!!")
+        console.log(err)
+    }
+    console.log(`Server is connected to ${process.env.port}`)
 })
