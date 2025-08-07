@@ -99,4 +99,13 @@ app.get("/purchased" , (req, res) => {
 
     if(token.token === "abc123")
         res.send("this is the purchased token we got")
+
+    res.send("plz login first users.!!!")
+});
+
+app.listen(process.env.port, async () => {
+    try{
+        await Connections;
+        console.log("Connection of DB get Successfully...!!!")
+    }
 })
