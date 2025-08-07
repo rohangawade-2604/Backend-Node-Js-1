@@ -79,7 +79,7 @@ app.get("/about" ,(req, res) => {
 })
 
 app.get("/weather" , (req, res) => {
-    const token = req.query.token;
+    // const token = req.query.token;
 
     const token = req.headers.authorization?.split(" ")[1];
     const decoded = jwt.verify(token, "hush" , (err , decoded) => {
