@@ -14,4 +14,6 @@ Authentication :-
             password :
                 email&&password is correct ? login successfull : login failed;
 
-        3. 
+        3. Authenticated services / endpoints
+            /weather
+            /purchased
