@@ -27,3 +27,12 @@ Authentication :-
                 when someone login in successfully, we gave them a token name "abc123"
                 we'll check the token when they visit the protected endpoints
                 if token is correct? "give that endpoint access":"login again"
+
+            Token: 
+                "abc123"-- for everyone who login in successfully
+                    - token is not unique per person
+                    - math.random()
+                    - bruteforcing
+
+            
+            
