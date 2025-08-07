@@ -5,3 +5,13 @@ Authorization :- It is way of the determining what access does someone having ab
 Authentication :- 
 
         1. Signup :- create-Account/ register
+            email :
+            password :
+                store to DB
+
+        2. Login :- 
+            email :
+            password :
+                email&&password is correct ? login successfull : login failed;
+
+        3. 
