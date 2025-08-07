@@ -72,3 +72,8 @@ app.post("/login", async(req, res) => {
         res.send("something went wrong! please try again later...");
     }
 });
+
+
+app.get("/about" ,(req, res) => {
+    res.send("This is the About page....");
+})
