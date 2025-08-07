@@ -1,0 +1,7 @@
+Authentication :- It just a way of Identifying someone who is that...
+
+Authorization :- It is way of the determining what access does someone having about It
+
+Authentication :- 
+
+        1. Signup :- create-Account/ register
