@@ -17,3 +17,13 @@ Authentication :-
         3. Authenticated services / endpoints
             /weather
             /purchased
+
+
+            a. we will make the login at every protect points.
+                1. you are annoying the user/not the right user experience
+                2. not a optional way, quering db's users collection again and again
+
+            b. token
+                when someone login in successfully, we gave them a token name "abc123"
+                we'll check the token when they visit the protected endpoints
+                if token is correct? "give that endpoint access":"login again"
