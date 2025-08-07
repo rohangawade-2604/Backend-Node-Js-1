@@ -89,7 +89,11 @@ app.get("/weather" , (req, res) => {
         else if (decoded) {
             console.log(decoded, "decoded")
             res.send("this is the weather app")
-        }
-        
+        }  
     })
+})
+
+app.get("/purchased" , (req, res) => {
+    const token = req.query
+    
 })
