@@ -77,3 +77,9 @@ app.post("/login", async(req, res) => {
 app.get("/about" ,(req, res) => {
     res.send("This is the About page....");
 })
+
+app.get("/weather" , (req, res) => {
+    // const token = req.query.token;
+
+    
+})
