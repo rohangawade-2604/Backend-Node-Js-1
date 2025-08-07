@@ -96,4 +96,7 @@ app.get("/weather" , (req, res) => {
 app.get("/purchased" , (req, res) => {
     const token = req.query
     console.log(token, "token is here finally we got")
+
+    if(token.token === "abc123")
+        res.send("this is the purchased token we got")
 })
