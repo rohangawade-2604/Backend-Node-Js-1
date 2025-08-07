@@ -86,5 +86,10 @@ app.get("/weather" , (req, res) => {
         if(err){
             res.send("please login first")
         }
+        else if (decoded) {
+            console.log(decoded, "decoded")
+            res.send("this is the weather app")
+        }
+        
     })
 })
