@@ -5,8 +5,8 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 
 const {Connections} = require('./config/db')
-const {UserModule} = require('./model/usermodel')
-const {notesModule} = require('./Routes/Note.model')
+const {UserModule} = require('./model/User.model')
+const {noteRoutes} = require('./Routes/Notes.route')
 const {Authenticate}= require('./middleware/Authentication')
 
 const app = express();
@@ -68,4 +68,23 @@ app.post('/login', async (req, res) => {
 
 app.get('/about', (req, res) => {
   res.send('this is about...');
+});
+
+// here we have to use authentication function middleware for authorization check
+
+
+app.use(Authenticate);
+
+app.use('/notes', noteRoutes);
+
+
+app.listen(process.env.Port, async () => {
+  try {
+    await Connections;
+    console.log('Connected to DB Succesfully...');
+  } catch (err) {
+    console.log('Connected to DB Failed??');
+    console.log(err);
+  }
+  console.log(`Server was connected to ${process.env.Port}`);
 });
