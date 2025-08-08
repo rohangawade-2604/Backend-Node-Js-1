@@ -42,4 +42,26 @@ app.post('/signup', async (req, res) => {
   }
 });
 
-
+app.post('/login', async (req, res) => {
+  const { email, password } = req.body;
+  try {
+    const checkUserDetails = await UserModule.find({ email }); // here we pass the email/pas into the find is useing and-operator
+    if (checkUserDetails.length > 0) {
+      const hashPassword = checkUserDetails[0].password;
+      bcrypt.compare(password, hashPassword, function (err, result) {
+        // result == true
+        if (result) {
+          const token = jwt.sign({ userID: checkUserDetails[0]._id }, 'hush');
+          res.send({ msg: 'login Succesfull...', token: token });
+        } else {
+          res.send(`login Unsuccesfull password ${err}...`);
+        }
+      });
+    } else {
+      res.send('login Unsuccesfull...');
+    }
+  } catch (err) {
+    console.log(err);
+    res.send('something went wrong! please try again leater...');
+  }
+});
