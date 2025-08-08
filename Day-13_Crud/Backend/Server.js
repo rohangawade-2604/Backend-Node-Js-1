@@ -65,3 +65,7 @@ app.post('/login', async (req, res) => {
     res.send('something went wrong! please try again leater...');
   }
 });
+
+app.get('/about', (req, res) => {
+  res.send('this is about...');
+});
