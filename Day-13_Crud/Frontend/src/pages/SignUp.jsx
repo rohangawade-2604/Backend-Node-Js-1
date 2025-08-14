@@ -54,6 +54,24 @@ export const SignUp = () => {
     <>
       <form action="" onSubmit={handleSubmit}>
             
+            {
+                fields?.map((el ,i) => {
+                    return(
+                        <div key={i}>
+                            <label htmlFor={el.name}>{el.label}</label>
+
+                            <input type={el.type} 
+                            id={el.id}
+                            name={el.name} 
+                            placeholder={el.placeholder} 
+                            onChange={(e) =>handleChange(e)} 
+                            required={el.required} 
+                        />
+                        </div>
+                    )
+                })
+            }
+            <button type='submit'>Submit</button>
       </form>
     </>
   )
