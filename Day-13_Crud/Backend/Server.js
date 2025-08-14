@@ -7,6 +7,7 @@ const bcrypt = require("bcrypt");
 const {Connections} = require('./config/db')
 const {UserModule} = require('./model/User.model')
 const {noteRoutes} = require('./Routes/Notes.route')
+const {UsersProducts} = require('./model/product')
 const {Authenticate}= require('./middleware/Authentication')
 
 const app = express();
@@ -16,6 +17,12 @@ app.use(cors());
 
 app.get('/', (req, res) => {
     res.send("welcome...!!!")
+})
+
+app.get('/product', async (req, res) => {
+  let data = await UsersProducts.find();
+  console.log('data', data);
+  res.status(201).send(data)
 })
 
 app.post('/signup', async (req, res) => {
@@ -49,7 +56,7 @@ app.post('/login', async (req, res) => {
     if (checkUserDetails.length > 0) {
       const hashPassword = checkUserDetails[0].password;
       bcrypt.compare(password, hashPassword, function (err, result) {
-        // result == true
+        
         if (result) {
           const token = jwt.sign({ userID: checkUserDetails[0]._id }, 'hush');
           res.send({ msg: 'login Succesfull...', token: token });
@@ -66,6 +73,8 @@ app.post('/login', async (req, res) => {
   }
 });
 
+
+
 app.get('/about', (req, res) => {
   res.send('this is about...');
 });
@@ -78,7 +87,7 @@ app.use(Authenticate);
 app.use('/notes', noteRoutes);
 
 
-app.listen(process.env.Port, async () => {
+app.listen(process.env.port, async () => {
   try {
     await Connections;
     console.log('Connected to DB Succesfully...');
@@ -86,5 +95,5 @@ app.listen(process.env.Port, async () => {
     console.log('Connected to DB Failed??');
     console.log(err);
   }
-  console.log(`Server was connected to ${process.env.Port}`);
+  console.log(`Server was connected to ${process.env.port}`);
 });

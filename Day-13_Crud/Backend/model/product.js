@@ -1,7 +1,6 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const productSchema = mongoose.Schema();
+const UsersProducts = mongoose.model('product', productSchema); // This will look for 'products' collection
 
-const UsersProducts = mongoose.model('product', productSchema);
-
-module.exports = {UsersProducts}
+module.exports = { UsersProducts }
