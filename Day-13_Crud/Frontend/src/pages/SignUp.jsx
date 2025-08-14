@@ -2,7 +2,9 @@ import React from 'react'
 import { useState } from 'react'
 import{ useDispatch } from 'react-redux';
 
-import {  signupThunks } from '../Features/SignIn/SignUpReducer';
+import { signUpThunk} from '../Reducer/SignupReducer';
+
+
 
 export const SignUp = () => {
 
@@ -34,9 +36,9 @@ export const SignUp = () => {
     })
     console.log('form: ', form);
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
         e.preventDefault()
-        dispatchSignUp(signupThunks(form)) 
+        dispatchSignUp(signUpThunk(form)) 
     }
 
     const handleChange =(e) => {

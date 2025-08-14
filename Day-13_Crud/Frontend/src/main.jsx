@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import { BrowswerRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
-import {store} from './App/store'
+import { store } from './store/store'
 
 createRoot(document.getElementById('root')).render(
   <BrowswerRouter>
