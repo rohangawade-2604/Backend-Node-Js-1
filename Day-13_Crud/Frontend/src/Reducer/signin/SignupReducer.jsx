@@ -28,6 +28,7 @@ export const signUpThunk = (formData) => async (dispatch) => {
 
         const result = await response.json();
         console.log("ApI response", result);
+        dispatch(signIns(result));
 
         if(result.success){
             alert(result.message);
