@@ -8,8 +8,8 @@ function App() {
 
   return (
     <>
-      <h1>Api fetching data</h1>
-
+      
+    
       <Navbar/>
       <AllRoutes/>
     </>
