@@ -21,7 +21,7 @@ export const Product = () => {
 
     useEffect(() => {
         getApiData();
-    }, [])
+    })
 
     return(
         <>
@@ -31,7 +31,7 @@ export const Product = () => {
             {
                data.map((el, id) => (
                 <div className="cards" key={id}>
-                    <img src={el.image} alt="" />
+                    <img src={el.image} alt="" className="h-40 w-60"/>
 
                     <div>
                         <h3 className="">{el.title}</h3>
