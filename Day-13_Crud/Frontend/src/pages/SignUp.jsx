@@ -81,7 +81,7 @@ export const SignUp = () => {
             })
           }
           <div className="button_part text-center mt-8">
-            <button type='submit' className=' w-[400px] h-[40px] rounded-md bg-green-500 text-white transition-all hover:bg-green-600 hover:text-black '>Submit</button>
+            <button type='submit' className=' w-[400px] h-[40px] rounded-md bg-green-500 text-white  transition-all hover:bg-green-600 hover:text-black '>Submit</button>
           </div>
         </form>
       </div>
