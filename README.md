@@ -169,4 +169,4 @@ here are some command as follow below in this is
         {$set: {active:true}} = This is the updated data in every document which will selected in wifes using the '$set' property
 
 
-
+hello part
