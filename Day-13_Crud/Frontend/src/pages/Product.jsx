@@ -19,7 +19,7 @@ export const Product = () => {
 
   useEffect(() => {
     getApiData();
-  }, );
+  }, []);
 
   // Pagination logic
   const lastIndex = currentPage * itemsPerPage;
