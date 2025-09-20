@@ -18,7 +18,7 @@ export default signUpReducer.reducer;
 
 export const signUpThunk = (formData) => async (dispatch) => {
     try{
-        const response = await fetch("http://localhost:8500/signup", {
+        const response = await fetch("http://localhost:9000/signup", {
             method: "POST",
             body: JSON.stringify(formData),
             headers: {
