@@ -55,7 +55,7 @@ app.post('/signup', async (req, res) => {
 app.post('/login', async (req, res) => {
   const { email, password } = req.body;
   try {
-    const checkUserDetails = await UserModule.find({ email }); // here we pass the email/pas into the find is useing and-operator
+    const checkUserDetails = await UserModule.find({ email });  // here we pass the email/pas into the find is useing and-operator
     if (checkUserDetails.length > 0) {
       const hashPassword = checkUserDetails[0].password;
       bcrypt.compare(password, hashPassword, function (err, result) {
@@ -86,6 +86,7 @@ app.get('/about', (req, res) => {
 
 
 app.use(Authenticate);
+
 
 app.use('/notes', noteRoutes);
 
