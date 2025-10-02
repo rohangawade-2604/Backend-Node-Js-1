@@ -11,8 +11,8 @@ require('dotenv').config();
 
 //import form the personal files
 
-const {connection} = require('./config/db')
-const {UserModule} = require('./Model/signup.model');
+const { Connection } = require('./config/db');
+const { UserModule } = require('./Model/signup.model');
 
 const app = express();
 
@@ -25,12 +25,12 @@ app.get('/', (req, res) => {
 app.post('/signup', async(req, res) => {
     const {email, password, name} = req.body;
 
-    const UserPresent = await UserModule.findOne({email});
-    console.log(UserPresent,email,password,name);
+    const UserPresent = await UserModule.findOne({ email });
+    console.log(UserPresent);
 
     if(UserPresent) {
         res.send("User already present, please login");
-        return;
+        // return;
     }
     
     // bcyrpting the password before storing it in the database
@@ -58,7 +58,7 @@ app.post('/signup', async(req, res) => {
 
 app.listen(process.env.PORT, async() => {
     try{
-        await connection;
+        await Connection;
         console.log("Connected to the database");
     }
     catch(err){
