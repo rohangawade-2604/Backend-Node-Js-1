@@ -6,6 +6,7 @@ const SignupSchema = mongoose.Schema({
     password: String
 },
     { versionKey: false }
+    
 )
 
 const UserModule = mongoose.model("signup", SignupSchema)
