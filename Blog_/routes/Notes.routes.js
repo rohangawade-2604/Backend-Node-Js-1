@@ -25,7 +25,7 @@ notesRoutes.post('/create', async (req, res) => {
         res.status(201).send({ msg: "new notes created successfully", payload: data })
     } catch (error) {
         console.log(error)
-        res.status(401).send({ msg: "Something went wrong, please try again later sometimes", error: error })
+        res.status(401).send({ msg: "Something went wrong, please try again later ", error: error })
     }
 })
 
