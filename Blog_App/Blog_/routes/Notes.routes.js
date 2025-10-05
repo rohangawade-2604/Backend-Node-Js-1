@@ -76,9 +76,9 @@ notesRoutes.delete('/delete/:nodeIDs', async(req, res) => {
     } else {
         
         try {
-            let noteUpdates = await NotesModule.findbyIdAndDelete({ _id: nodeID }, data) 
+            let noteDelete = await NotesModule.findbyIdAndDelete({ _id: nodeID }, data) 
 
-            res.send({ msg: `your task has been updated successfully ${noteUpdates} with it ID ${nodeID}`})
+            res.send({ msg: `your task has been Deleted successfully ${noteDelete} with it ID ${nodeID}`})
         } catch (error) {
             console.log(error, "you found an error")
         }
