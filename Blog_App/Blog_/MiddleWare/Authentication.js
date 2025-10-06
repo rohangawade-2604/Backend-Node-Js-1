@@ -9,8 +9,9 @@ console.log(req.headers);
         jwt.verify(VerifyToken, process.env.SECRET_KEY, (err, data) => {
             console.log(data)
             if(data){
-                const userID = data?.userID;
-                req.body.userID = userID;
+                const userId = data?.userID;
+                console.log("🚀 ~ Authentication ~ userId:", userId)
+                req.user = {userID: userId}
                 next();
              }
              else{

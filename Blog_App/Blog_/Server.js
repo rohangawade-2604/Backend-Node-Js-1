@@ -25,6 +25,7 @@ app.get('/', (req, res) => {
 
 app.post('/signup', async(req, res) => {
     const {email, password, name} = req.body;
+    console.log("🚀 ~ email:", email)
 
     const UserPresent = await UserModule.findOne({ email });
     console.log(UserPresent);

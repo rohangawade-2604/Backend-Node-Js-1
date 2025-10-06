@@ -18,6 +18,7 @@ notesRoutes.get('/', async (req, res) => {
 // create
 notesRoutes.post('/create', async (req, res) => {
     const data = req.body;
+    console.log("🚀 ~ req:", req)
     console.log(data, "data is send note routes");
 
     try {
@@ -36,10 +37,10 @@ notesRoutes.patch('/edit/:nodeIDs', async(req, res) => {
 
     const nodeID = req.params.nodeIDs;
 
-    const UserchiID = req.body.userID    // called from authentication middleware
+    const UserchiID = req.user.userID    // called from authentication middleware //
     console.log(UserchiID, "user id in notes routes");
 
-    const notes = await NotesModule.findOne({_id: nodeID})
+    const notes = await NotesModule.findOne({ _id: nodeID})
 
     if (UserchiID !== notes.userID)  {
 
@@ -60,11 +61,10 @@ notesRoutes.patch('/edit/:nodeIDs', async(req, res) => {
 
 //delete
 notesRoutes.delete('/delete/:nodeIDs', async(req, res) => {
-    const data = req.body;
 
     const nodeID = req.params.nodeIDs;
 
-    const UserchiID = req.body.userID    // called from authentication middleware
+    const UserchiID = req.user.userID    // called from authentication middleware //
     console.log(UserchiID, "user id in notes routes");
 
     const notes = await NotesModule.findOne({_id: nodeID})

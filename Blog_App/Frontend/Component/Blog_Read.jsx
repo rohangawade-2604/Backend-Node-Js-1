@@ -25,9 +25,9 @@ export const Blog_ReadPage = () => {
     <>
       <h1>Blog_UI</h1>
       {
-        data?.map((el,id) => (
+        data.map((el,id) => (
             <div key={id}>
-                <h1></h1>
+                <h1>{el.id}</h1>
             </div>
         ))
       }
@@ -36,3 +36,18 @@ export const Blog_ReadPage = () => {
 }
 
  
+
+
+// {
+//   "name":"rohangaikwad123",
+//   "email":"rohangaikwad123@gmail.com",
+//   "password":"rohangaikwad123543"
+// }
+
+// eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2OGUzOGEyZTE3MzlkYjMyNjYxNWQ1NTgiLCJpYXQiOjE3NTk3NDMzMzR9.eirywFiUQJ11WtxnjZb1vEhHkHSm7dik5Yv8YgRhHVU
+
+// {
+//   "title":"Demon slayer",
+//   "note":"Web anime infinity castle",
+//   "category":["tanjiro", "inosuke", "zenitsu"]
+// }
