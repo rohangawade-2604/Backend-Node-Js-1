@@ -5,7 +5,7 @@ const baseURL = import.meta.env.BASE_URL;
 
 export const Blog_ReadPage = () => {
 
-    const [data, setData] = useState();
+    const [data, setData] = useState([]);
 
     const token = localStorage.getItem("token")
 
@@ -25,7 +25,7 @@ export const Blog_ReadPage = () => {
     <>
       <h1>Blog_UI</h1>
       {
-        data.map((el,id) => (
+        data?.map((el,id) => (
             <div key={id}>
                 <h1>{el.id}</h1>
             </div>

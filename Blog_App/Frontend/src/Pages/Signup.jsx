@@ -33,7 +33,7 @@ export const SignupPage = () => {
         email: <input type="text" name='email' placeholder='Enter your Email' onChange={(e) => setPassword(e.target.value)} />
 
         password: <input type="text" name='password' placeholder='Enter your Password' onChange={(e) => setName(e.target.value)} />
-()
+
          <button type='button'>Submit</button>     
       </form>
     </>
