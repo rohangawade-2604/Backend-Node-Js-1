@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import {Signup} from '../API/Signup'
 
-const baseURL = import.meta.env.BASE_URL
+const baseURL = import.meta.env.VITE_BASE_URL
 
 export const SignupPage = () => {
 
@@ -26,9 +26,9 @@ export const SignupPage = () => {
   
   return (
     <>
-      <form action="" onSubmit={() => handleSubmitChange(event)}>
+      <form action="" onSubmit={(e) => handleSubmitChange(e)}>
         
-        Name:<input type="text" name='name' placeholder='Enter your Name'  onChange={(e) => setEmail(e.target.value)} />
+        Name:<input type="text" name='name' placeholder='Enter your Name n'  onChange={(e) => setEmail(e.target.value)} />
 
         email: <input type="text" name='email' placeholder='Enter your Email' onChange={(e) => setPassword(e.target.value)} />
 

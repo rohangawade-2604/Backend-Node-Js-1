@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import {Blog_Read} from "../src/API/Blog_Read"
 
-const baseURL = import.meta.env.BASE_URL;
+const baseURL = import.meta.env.VITE_BASE_URL;
 
 export const Blog_ReadPage = () => {
 

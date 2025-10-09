@@ -13,6 +13,7 @@ require('dotenv').config();
 const {notesRoutes} = require('./routes/Notes.routes')
 const { Connection } = require('./config/db');
 const { UserModule } = require('./Model/signup.model');
+// const {Authenticate} = require('./MiddleWare/Authenticate')
 const { Authentication } = require('./MiddleWare/Authentication');
 
 const app = express();
@@ -94,6 +95,7 @@ app.post('/login', async(req, res) => {
 
 
 app.use(Authentication);
+// app.use(Authenticate)
 app.use('/notes', notesRoutes);
 
 
