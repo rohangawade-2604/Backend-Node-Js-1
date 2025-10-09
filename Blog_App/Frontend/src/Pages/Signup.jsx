@@ -28,7 +28,7 @@ export const SignupPage = () => {
     <>
       <form action="" onSubmit={(e) => handleSubmitChange(e)}>
         
-        Name:<input type="text" name='name' placeholder='Enter your Name n'  onChange={(e) => setEmail(e.target.value)} />
+        Name:<input type="text" name='name' placeholder='Enter your Name '  onChange={(e) => setEmail(e.target.value)} />
 
         email: <input type="text" name='email' placeholder='Enter your Email' onChange={(e) => setPassword(e.target.value)} />
 
