@@ -3,6 +3,8 @@ import './App.css'
 import { Blog_ReadPage } from "../Component/Blog_Read"
 import { LoginPage } from "../src/Pages/Login"
 import { SignupPage } from "../src/Pages/Signup"
+import { Navbar } from "./NavbarPages/Navbar"
+import { AllRoutes } from './Routes/AllRoutes'
 
 function App() {
 
@@ -11,7 +13,9 @@ function App() {
     <>
       {/* <SignupPage />
       <LoginPage /> */}
-      <Blog_ReadPage />
+      {/* <Blog_ReadPage /> */}
+      <Navbar />
+      <AllRoutes />
 
     </>
   )
