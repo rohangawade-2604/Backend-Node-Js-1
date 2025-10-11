@@ -25,32 +25,38 @@ export const Navbar = () => {
     return (
         <>
             <nav>
-                <div className="logo">
-                    <img src="https://static.vecteezy.com/system/resources/previews/034/869/307/non_2x/rng-letter-logo-design-inspiration-for-a-unique-identity-modern-elegance-and-creative-design-watermark-your-success-with-the-striking-this-logo-vector.jpg" alt="" className='w-30' />
-                </div>
+                <div className="Navbar flex justify-around items-center border-2">
 
 
-                <div className="Navlinks border-2 p-6" >
-                    {
-                        links.map((data) => (
+                    <div className="logo">
+                        <img src="https://static.vecteezy.com/system/resources/previews/034/869/307/non_2x/rng-letter-logo-design-inspiration-for-a-unique-identity-modern-elegance-and-creative-design-watermark-your-success-with-the-striking-this-logo-vector.jpg" alt="" className='w-20 ' />
+                    </div>
 
-                            <NavLink className="ml-10" style={({ isActive }) => {
-                                return isActive ? ActiveStyle : DefaultStyle;
-                            }}
-                                key={data.path} to={data.path} end>
 
-                                {data.title}
+                    <div className="Navlinks  " >
+                        {
+                            links.map((data) => (
 
-                            </NavLink>
-                        ))
-                    }
-                </div>
+                                <NavLink className="ml-10" style={({ isActive }) => {
+                                    return isActive ? ActiveStyle : DefaultStyle;
+                                }}
+                                    key={data.path} to={data.path} end>
 
-                <div className="links">
-                   <button> <Link to="/login">Login</Link></button>
+                                    {data.title}
+
+                                </NavLink>
+                            ))
+                        }
+                    </div>
+
+                    <div className="links flex flex-row gap-20">
+                        <button> <Link to="/login">Login</Link></button>
+                        <button>Get Started</button>
+                    </div>
+
                 </div>
             </nav>
-
+ 
 
         </>
     )
