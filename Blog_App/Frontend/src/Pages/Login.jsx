@@ -2,7 +2,10 @@ import React from 'react'
 import { useState } from 'react';
 import "./Login.css"
 
+import { Link } from 'react-router-dom'
+
 import { Login } from "../API/Login"
+import { SignupPage } from './Signup'
 
 const baseURL = import.meta.env.VITE_BASE_URL;
 
@@ -29,15 +32,33 @@ export const LoginPage = () => {
     <>
       <div className="login_form ">
 
-        <form action="" onSubmit={() => handleSubmitChange()} className='border-2 '>
+        <form action="" onSubmit={() => handleSubmitChange()} className=' '>
 
-          <h1>Login </h1>
+          <div className="icon text-center">
+            <i class="fa-solid fa-circle-user"></i>
+          </div>
 
           <input type="text" name='email' placeholder='Enter your Email' onChange={(e) => setEmail(e.target.value)} className='email w-60 border-2' />
 
           <input type="text" name='password' placeholder='Enter your password' onChange={(e) => setPassword(e.target.value)} className='password w-60 border-2' />
 
+          <div className="content flex  mx-13 text-[13px]">
+
+            <div className="inputs flex w-40 ">
+              <input type="checkbox" name='Remember' id='remember' />
+            <label htmlFor="" id='remember' className=' w-60'>Remember Me </label><br />
+            </div>
+              
+
+              <h1 className='forget'>Forgot Password ?</h1>
+
+
+          </div>
+
           <button type='button' className='submit'>Submit</button>
+
+
+
         </form>
       </div>
     </>
