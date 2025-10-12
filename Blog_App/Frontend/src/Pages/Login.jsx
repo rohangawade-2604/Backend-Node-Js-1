@@ -31,13 +31,13 @@ export const LoginPage = () => {
 
         <form action="" onSubmit={() => handleSubmitChange()} className='border-2 '>
 
-          <h1>Login</h1>
+          <h1>Login </h1>
 
-          <input type="text" name='email' placeholder='Enter your Email' onChange={(e) => setEmail(e.target.value)} className='w-60 border-2' />
+          <input type="text" name='email' placeholder='Enter your Email' onChange={(e) => setEmail(e.target.value)} className='email w-60 border-2' />
 
-          <input type="text" name='password' placeholder='Enter your password' onChange={(e) => setPassword(e.target.value)} className='w-60 border-2' />
+          <input type="text" name='password' placeholder='Enter your password' onChange={(e) => setPassword(e.target.value)} className='password w-60 border-2' />
 
-          <button type='button'>Submit</button>
+          <button type='button' className='submit'>Submit</button>
         </form>
       </div>
     </>
