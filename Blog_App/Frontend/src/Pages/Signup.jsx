@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 
 import {Signup} from '../API/Signup'
 
+import './signup.css'
+
 const baseURL = import.meta.env.VITE_BASE_URL
 
 export const SignupPage = () => {
@@ -26,16 +28,19 @@ export const SignupPage = () => {
   
   return (
     <>
+    <div className="signup_form">
       <form action="" onSubmit={(e) => handleSubmitChange(e)}>
         
-        Name:<input type="text" name='name' placeholder='Enter your Name '  onChange={(e) => setEmail(e.target.value)} />
+        <input type="text" name='name' placeholder='Enter your Name '  onChange={(e) => setEmail(e.target.value)} />
 
-        email: <input type="text" name='email' placeholder='Enter your Email' onChange={(e) => setPassword(e.target.value)} />
+         <input type="text" name='email' placeholder='Enter your Email' onChange={(e) => setPassword(e.target.value)} />
 
-        password: <input type="text" name='password' placeholder='Enter your Password' onChange={(e) => setName(e.target.value)} />
+           <input type="text" name='password' placeholder='Enter your Password' onChange={(e) => setName(e.target.value)} />
 
          <button type='button'>Submit</button>     
       </form>
+
+      </div>
     </>
   )
 }

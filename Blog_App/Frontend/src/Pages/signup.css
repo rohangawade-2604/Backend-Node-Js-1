@@ -1,0 +1,7 @@
+.signup_form{
+    height: 88vh;
+    background-image: url("../assets/signup.png");
+    color: white;
+    background-size: cover;
+    border: 2px solid black;
+}

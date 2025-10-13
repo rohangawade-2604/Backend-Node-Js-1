@@ -5,6 +5,7 @@ import "./Login.css"
 import { Link } from 'react-router-dom'
 
 import { Login } from "../API/Login"
+
 import { SignupPage } from './Signup'
 
 const baseURL = import.meta.env.VITE_BASE_URL;
@@ -42,6 +43,7 @@ export const LoginPage = () => {
 
           <input type="text" name='password' placeholder='Enter your password' onChange={(e) => setPassword(e.target.value)} className='password w-60 border-2' />
 
+
           <div className="content flex  mx-13 text-[13px]">
 
             <div className="inputs flex w-40 ">
@@ -57,6 +59,7 @@ export const LoginPage = () => {
 
           <button type='button' className='submit'>Submit</button>
 
+        <p className='Signup'><Link to="/signup">Don't have Account ? Signup Now</Link></p>
 
 
         </form>
