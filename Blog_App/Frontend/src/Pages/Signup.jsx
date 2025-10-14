@@ -41,7 +41,16 @@ export const SignupPage = () => {
 
         <input type="text" name='password' placeholder='Enter your Password' onChange={(e) => setName(e.target.value)} />
 
-         <button type='button1'>Submit</button>     
+        <div className="inputs  flex justify- w-[100%] mx-10 ml-21">
+          <div className="first w-[30px]">
+
+              <input type="checkbox" name='Remember' id='remember' className=' '   />
+          </div>
+            <label htmlFor="" id='remember' className=' w-[70%]  '>I Agree with the Terms and Condition  </label><br />
+            </div>
+
+         <button type='button' className='button1'
+         >Submit</button>     
       </form>
 
       </div>

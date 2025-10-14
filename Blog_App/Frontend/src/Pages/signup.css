@@ -1,12 +1,29 @@
 .signup_form{
     height: 88vh;
-    background-image: url("../assets/signup.png");
+    background-image: url("../assets/image.png");
     color: white;
+    /* background-position: center; */
     background-size: cover;
+    background-repeat: no-repeat;
     border: 2px solid black;
 }
 
-.button1{
-    margin-top: 20px;
+.button1 {
     border: 2px solid white;
+    width: 65%;
+    margin-left: 17%;
+    /* margin-top: 1px; */
+    padding: 3px;
+    transition: all 0.1s ease-in-out;
+}
+
+.button1:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.content{
+    text-align: center;
+    cursor: pointer;
 }

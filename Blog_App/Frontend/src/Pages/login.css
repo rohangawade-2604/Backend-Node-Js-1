@@ -1,11 +1,13 @@
 .login_form{
-    background-image: url("../assets/login.png");
+    background-image: url("../assets/image.png");
     background-size: cover;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 88vh;
     color: white;
     width: 100%;
-     
+  backdrop-filter: blur(10px);
+  
+     position: relative;
 }
 
 form i{
@@ -14,6 +16,11 @@ form i{
 }
 
 form{
+    position: absolute;
+     background-color: rgba(0, 0, 0, 0.4); /* must not be fully opaque */
+  backdrop-filter: blur(10px);
+    left: 25%;
+     z-index: 1;
     width: 35%;
     height: 60vh;
     display: flex;
@@ -24,7 +31,7 @@ form{
     margin-left: 7%;
     /* border: 2px solid white; */
     opacity: 0.8;
-    box-shadow: 7px 7px 15px white;
+    box-shadow: 7px 7px 13px  black;
 }
 
 .heading{
@@ -41,6 +48,8 @@ input{
     border: none;
     border-bottom: 2px solid white;
     /* text-align: center; */
+    color: beige;
+    
     
 }
 
@@ -64,6 +73,5 @@ input{
 }
 
 .Signup{
-   
     text-align: center;
 }
