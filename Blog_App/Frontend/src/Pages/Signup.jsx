@@ -30,14 +30,18 @@ export const SignupPage = () => {
     <>
     <div className="signup_form">
       <form action="" onSubmit={(e) => handleSubmitChange(e)}>
+
+        <div className="icon text-center ">
+            <i class="fa-solid fa-circle-user"></i>
+          </div>
         
         <input type="text" name='name' placeholder='Enter your Name '  onChange={(e) => setEmail(e.target.value)} />
 
-         <input type="text" name='email' placeholder='Enter your Email' onChange={(e) => setPassword(e.target.value)} />
+        <input type="text" name='email' placeholder='Enter your Email' onChange={(e) => setPassword(e.target.value)} />
 
-           <input type="text" name='password' placeholder='Enter your Password' onChange={(e) => setName(e.target.value)} />
+        <input type="text" name='password' placeholder='Enter your Password' onChange={(e) => setName(e.target.value)} />
 
-         <button type='button'>Submit</button>     
+         <button type='button1'>Submit</button>     
       </form>
 
       </div>
