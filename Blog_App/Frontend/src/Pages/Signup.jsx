@@ -29,7 +29,7 @@ export const SignupPage = () => {
   return (
     <>
     <div className="signup_form">
-      <form action="" onSubmit={(e) => handleSubmitChange(e)}>
+      <form action="" onSubmit={() => handleSubmitChange()}>
 
         <div className="icon text-center ">
             <i class="fa-solid fa-circle-user"></i>
