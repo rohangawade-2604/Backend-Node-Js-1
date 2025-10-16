@@ -13,8 +13,8 @@ const baseURL = import.meta.env.VITE_BASE_URL;
 
 export const LoginPage = () => {
 
-  const { email, setEmail } = useState(null);
-  const { password, setPassword } = useState(null);
+  const [email, setEmail]   = useState(null);
+  const [ password, setPassword ] = useState(null);
 
   const fetchData = async () => {
     const final = await Login(baseURL, { email: email.trim(), password: password.trim() })
@@ -36,7 +36,7 @@ export const LoginPage = () => {
         <form action="" onSubmit={() => handleSubmitChange()} className=' '>
 
           <div className="icon text-center">
-            <i class="fa-solid fa-circle-user"></i>
+            <i className="fa-solid fa-circle-user"></i>
           </div>
 
           <input type="text" name='email' placeholder='Enter your Email' onChange={(e) => setEmail(e.target.value)} className='email w-60 border-2' />
@@ -57,7 +57,7 @@ export const LoginPage = () => {
 
           </div>
 
-          <button type='button' className='submit'>Submit</button>
+          <button type='submit' className='submit'>Submit</button>
 
         <p className='Signup'><Link to="/signup">Don't have Account ? Signup Now</Link></p>
 
