@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react'
-import {Blog_Read} from "../src/API/Blog_Read"
+import { Blog_Read } from '../API/Blog_Read'
 
 const baseURL = import.meta.env.VITE_BASE_URL;
 
