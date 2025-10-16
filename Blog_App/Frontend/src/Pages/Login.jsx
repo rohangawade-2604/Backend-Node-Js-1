@@ -33,7 +33,7 @@ export const LoginPage = () => {
     <>
       <div className="login_form ">
 
-        <form action="" onSubmit={() => handleSubmitChange()} className=' '>
+        <form action="" onSubmit={(event) => handleSubmitChange(event)} className=' '>
 
           <div className="icon text-center">
             <i className="fa-solid fa-circle-user"></i>

@@ -29,10 +29,10 @@ export const SignupPage = () => {
   return (
     <>
     <div className="signup_form">
-      <form action="" onSubmit={() => handleSubmitChange()}>
+      <form action="" onSubmit={(event) => handleSubmitChange(event)}>
 
         <div className="icon text-center ">
-            <i class="fa-solid fa-circle-user"></i>
+            <i className="fa-solid fa-circle-user"></i>
           </div>
         
         <input type="text" name='name' placeholder='Enter your Name '  onChange={(e) => setEmail(e.target.value)} />
