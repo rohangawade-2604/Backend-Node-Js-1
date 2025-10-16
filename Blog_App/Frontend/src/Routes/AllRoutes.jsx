@@ -7,6 +7,7 @@ import { Blog } from "../Components_pages/Blog"
 import { Contact } from "../Components_pages/Contact"
 import { LoginPage } from "../Pages/Login"
 import { SignupPage } from "../Pages/Signup"
+import { Blog_ReadPage } from "../Component/Blog_Read"
 
 export const AllRoutes = () => {
   return (
@@ -22,6 +23,7 @@ export const AllRoutes = () => {
         <Route path='/blogs' element={<Blog />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
         <Route path='/login' element={<LoginPage />}></Route>
+        <Route path='/blog-read' element={<Blog_ReadPage />}></Route>
 
 
       </Routes>
