@@ -34,7 +34,6 @@ export const LoginPage = () => {
   }
 
 
-
   const handleSubmitChange = (e) => {
     e.preventDefault();
 
@@ -47,7 +46,7 @@ export const LoginPage = () => {
     <>
       <div className="login_form ">
 
-        <form action="" onSubmit={(event) => handleSubmitChange(event)} className=' '>
+        <form action="" onSubmit={() => handleSubmitChange(event)} className=' '>
 
           <div className="icon text-center">
             <i className="fa-solid fa-circle-user"></i>

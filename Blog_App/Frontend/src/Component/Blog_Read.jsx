@@ -1,42 +1,54 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 
 import React, { useEffect, useState } from 'react'
 import { Blog_Read } from '../API/Blog_Read'
 
+import { useNavigate } from 'react-router-dom'
 const baseURL = import.meta.env.VITE_BASE_URL;
+
 
 export const Blog_ReadPage = () => {
 
-    const [data, setData] = useState([]);
+  const navigate = useNavigate();
 
-    const token = localStorage.getItem("token")
+  const [data, setData] = useState([]);
 
-    const fetchData = async() => {
-        const final = await Blog_Read(baseURL, token)
-        console.log(final, "we got the data inside the console")
-        setData(final)
+  const token = localStorage.getItem("token")
+
+  const fetchData = async () => {
+    const final = await Blog_Read(baseURL, token)
+    console.log(final, "we got the data inside the console")
+
+    if(final.status !== 200){
+      navigate('/login');
+      return;
     }
+    setData(final)
+  }
 
-    useEffect(() => {
-        fetchData();
-    }, [])
- 
-    
+  useEffect(() => {
+    fetchData();
+
+  }, [])
+
+
 
   return (
     <>
       <h1>Blog_UI</h1>
       {
-        data?.map((el,id) => (
-            <div key={id}>
-                <h1>{el.id}</h1>
-            </div>
+        data?.map((el, id) => (
+          <div key={id}>
+            <h1>{el.id}</h1>
+            <p>nothing</p>
+          </div>
         ))
       }
     </>
   )
 }
 
- 
+
 
 
 // {
