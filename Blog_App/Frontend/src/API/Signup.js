@@ -1,15 +1,13 @@
-import React from 'react'
+import axios from "axios";
 
-export const Signup = async(base_url, data) => {
-    console.log(data, "data is been return");
-
-    try {
-        let res = await fetch(`${base_url}/signup`, data)
-        console.log(res, "response from signup api");
-        return res;
-    } catch (error) {
-        console.log(error)
-    }
-}
-
- 
+export const Signup = async (url, data) => {
+  try {
+    const res = await axios.post(`${url}/signup`, data, {
+      headers: { "Content-Type": "application/json" }
+    });
+    return res;
+  } catch (err) {
+    console.log("Signup API Error:", err);
+    return err.response || err;
+  }
+};

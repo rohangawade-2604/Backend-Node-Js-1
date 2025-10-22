@@ -1,18 +1,15 @@
-import React from 'react'
+import axios from "axios";
 
-export const Login = async(base_url, data) => {
-    console.log(data, "data is been return");
-
-    try {
-        let res = await fetch(`${base_url}/login`, data,{
-            Headers:{
-                'Content-Type': 'application/json'
-            },
-        })
-        console.log(res, "response from login api");
-        return res;
-    } catch (error) {
-        console.log(error)
-    }
+export const Login = async (url, data) => {
+  try {
+    const res = await axios.post(`${url}/login`, data, {
+      headers: {
+        "Content-Type": "application/json"
+      }
+    });
+    return res;
+  } catch (err) {
+    console.log("Login API Error:", err);
+    return err.response || err;
+  }
 };
-

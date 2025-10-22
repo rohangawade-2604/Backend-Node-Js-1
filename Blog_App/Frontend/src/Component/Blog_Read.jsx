@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 
+
 import React, { useEffect, useState } from 'react'
 import { Blog_Read } from '../API/Blog_Read'
 
@@ -13,17 +14,20 @@ export const Blog_ReadPage = () => {
 
   const [data, setData] = useState([]);
 
-  const token = localStorage.getItem("token")
-
+  
   const fetchData = async () => {
+    const token = localStorage.getItem("token")
+    console.log("🚀 ~ token:", token);
     const final = await Blog_Read(baseURL, token)
     console.log(final, "we got the data inside the console")
+  
+    
 
-    if(final.status !== 200){
+    if(final.status === 401){
       navigate('/login');
       return;
     }
-    setData(final)
+    setData(final.data)
   }
 
   useEffect(() => {
@@ -37,9 +41,11 @@ export const Blog_ReadPage = () => {
     <>
       <h1>Blog_UI</h1>
       {
-        data?.map((el, id) => (
-          <div key={id}>
-            <h1>{el.id}</h1>
+        data && data.map((el, _id) => (
+          <div key={ _id }>
+           
+            <h1>{el.title}</h1>
+            <p>{el.content}</p>
             
           </div>
         ))
