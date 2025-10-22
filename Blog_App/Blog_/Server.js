@@ -19,6 +19,7 @@ const { Authentication } = require('./MiddleWare/Authentication');
 const app = express();
 
 app.use(express.json());   //to parse the json data into readable format
+app.use(cors());
 
 app.get('/', (req, res) => {
     res.send("Welcome to the home page");

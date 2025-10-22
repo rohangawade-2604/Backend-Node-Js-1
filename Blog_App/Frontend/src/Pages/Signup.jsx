@@ -19,7 +19,7 @@ export const SignupPage = () => {
   }
 
   const handleSubmitChange = (e) => {
-    e.prevantDefault();
+   e.preventDefault()
 
     if (email === "" && password === "" && name === "")
       return;
@@ -30,7 +30,7 @@ export const SignupPage = () => {
   return (
     <>
       <div className="signup_form">
-        <form action="" onSubmit={(event) => handleSubmitChange(event)}>
+        <form  onSubmit={() => handleSubmitChange(event)}>
 
           <div className="icon text-center ">
             <i className="fa-solid fa-circle-user"></i>
@@ -50,7 +50,7 @@ export const SignupPage = () => {
             <label htmlFor="" id='remember' className=' w-[70%]  '>I Agree with the Terms and Condition  </label><br />
           </div>
 
-          <button type='button' className='button1'
+          <button type='submit' className='button1'
           >Submit</button>
         </form>
 

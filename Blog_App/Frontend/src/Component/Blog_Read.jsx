@@ -40,7 +40,7 @@ export const Blog_ReadPage = () => {
         data?.map((el, id) => (
           <div key={id}>
             <h1>{el.id}</h1>
-            <p>nothing</p>
+            
           </div>
         ))
       }
