@@ -20,7 +20,7 @@ export const AllRoutes = () => {
         <Route path='/' element={<Home />}></Route>
         <Route path='/categories' element={<Categories />}></Route>
         <Route path='/about' element={<About />}></Route>
-        <Route path='/blogs' element={<Blog />}></Route>
+        <Route path='/blogs' element={<Blog_ReadPage />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
         <Route path='/login' element={<LoginPage />}></Route>
         <Route path='/blog-read' element={<Blog_ReadPage />}></Route>
