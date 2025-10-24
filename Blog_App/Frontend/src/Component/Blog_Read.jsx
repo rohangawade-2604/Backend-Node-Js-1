@@ -20,6 +20,7 @@ export const Blog_ReadPage = () => {
     console.log("🚀 ~ token:", token);
     const final = await Blog_Read(baseURL, token)
     console.log(final, "we got the data inside the console")
+    console.log(final, "we got the data inside the console")
   
     
 
