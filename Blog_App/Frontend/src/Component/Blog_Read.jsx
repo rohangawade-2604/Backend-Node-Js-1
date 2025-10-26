@@ -20,7 +20,7 @@ export const Blog_ReadPage = () => {
     console.log("🚀 ~ token:", token);
     const final = await Blog_Read(baseURL, token)
     console.log(final, "we got the data inside the console")
-    
+       
   
     
 
@@ -30,6 +30,7 @@ export const Blog_ReadPage = () => {
     }
     setData(final)
   }
+  console.log("🚀 ~ data:", data);
   console.log("🚀 ~ data:", data);
 
 
