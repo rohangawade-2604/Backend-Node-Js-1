@@ -23,7 +23,6 @@ export const AllRoutes = () => {
         <Route path='/contact' element={<Contact />}></Route>
         <Route path='/login' element={<LoginPage />}></Route>
         <Route path='/blog-read' element={<Blog_ReadPage />}></Route>
-        <Route path='/blog-read' element={<Blog_ReadPage />}></Route>
    
       </Routes>
     </>
