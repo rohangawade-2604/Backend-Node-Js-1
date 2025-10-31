@@ -3,7 +3,6 @@ import { Route, Routes, Link } from 'react-router-dom'
 import { Home } from "../Components_pages/Home"
 import { Categories } from "../Components_pages/Categories"
 import { About } from "../Components_pages/About"
-import { Blog } from "../Components_pages/Blog"
 import { Contact } from "../Components_pages/Contact"
 import { LoginPage } from "../Pages/Login"
 import { SignupPage } from "../Pages/Signup"
